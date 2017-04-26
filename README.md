@@ -2,6 +2,8 @@
 
 Scripts to get a list list of FiveM servsers, scrape for logs and "patch" server-binary to block access to logs.
 
+Do NOT abuse this!
+
 ## Usage ##
 
 Get list of servers
