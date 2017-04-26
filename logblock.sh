@@ -11,7 +11,7 @@ cp ${1} ${1}.backup || exit 1
 MD5=`md5sum $1|cut -d' ' -f1` 
 case "$MD5" in
   2d9848ca6b56ef72c65ccf84e8bf7f15)
-    printf '\x00' | dd conv=notrunc of=$1 bs=1 seek=$((0x00251f4d))
+    /usr/bin/printf '\x00' | dd conv=notrunc of=$1 bs=1 seek=$((0x00251f4d))
     echo "Done..."
     break
     ;;
