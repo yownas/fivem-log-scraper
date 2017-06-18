@@ -15,6 +15,11 @@ case "$MD5" in
     echo "Done..."
     break
     ;;
+  7f5f6df6fe5266a8c4ffa53a26ba2af0)
+    /usr/bin/printf '\x00' | dd conv=notrunc of=$1 bs=1 seek=$((0x00363CD0))
+    echo "Done..."
+    break
+    ;;
   *)
     echo "Unknown version. Exiting."
     exit
